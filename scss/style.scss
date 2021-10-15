@@ -1,0 +1,43 @@
+@charset 'utf-8';
+@import "reset.scss";
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    // border: 1px solid #000;
+    // margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+
+    .swiper-wrapper{
+        width: 100%; height: 100%;
+
+        .swiper-slide{
+            width: 100%; height: 100%;
+        }
+        .box1{ background: lightblue url(../img/pic1.png) no-repeat center/cover; }
+        .box2{ background: orange url(../img/pic2.png) no-repeat center/cover; }
+        .box3{ background: pink url(../img/pic3.png) no-repeat center/cover; }
+        .box4{ background: lightgreen url(../img/pic4.png) no-repeat center/cover;}
+        .box5{ background: coral url(../img/pic5.png) no-repeat center/cover; }
+    }
+
+    .auto{
+        position: absolute;
+        bottom: 20px; left: 20px;
+        z-index: 10;
+
+        li{
+            float: left;
+            margin-right: 20px;
+            cursor: pointer;
+            color: #fff;
+            text-align: center;
+            width: 80px; height: 20px;
+            line-height: 20px;
+
+            &.btnStart{ background: blue; }
+            &.btnStop{ background: red; }
+        }
+    }
+}
